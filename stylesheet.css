@@ -1,0 +1,80 @@
+ul#mainNav {
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8em;
+    color: #b3ff00;
+    a:link { color: #b3ff00; } 
+    a:visited { color: white; }
+    a:hover { color: white; }
+}
+
+footer {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8em;
+    color: #b3ff00;
+    width: 80%;
+}
+
+img{
+    width: 30%
+}
+
+h1{
+    font-family: "DM Sans", sans-serif;
+    font-size: 6em;
+    font-weight: 1000;
+    font-style: normal;
+    color: #b3ff00;
+    text-align: right;
+    padding-top: 0px;
+    line-height: 0%;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 50%;
+}
+
+p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8em;
+    color: #b3ff00;
+    text-align: left;
+}
+
+body {
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  ul, li {
+    display:inline
+}
+
+
+#bioText{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8em;
+    color: #b3ff00;
+    text-align:right;
+    width: 40%;
+    /*float: right;*/
+}
+
+
