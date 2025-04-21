@@ -1,15 +1,50 @@
-ul#mainNav {
-    display: inline-block;
-    list-style-type: none;
-    text-align: right;
+body {
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+  }
+
+  ul#mainNav, li#mainNav {
+    display:flex;
+    gap: 30px;
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: .8em;
-    color: #b3ff00;
-    a:link { color: #b3ff00; } 
-    a:visited { color: white; }
-    a:hover { color: white; }
+    padding:0;
+    margin-bottom: 50px;
+    
+    a:link { 
+        color: #b3ff00; 
+        text-decoration: underline wavy;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.06em;
+    } 
+    a:visited { 
+        color: white; 
+        text-decoration: underline wavy;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.06em;
+    }
+    a:hover { 
+        color: white; 
+        text-decoration: underline wavy;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.06em;
+    }
+}
+
+ul#footer, li#mainNav {
+    text-align: right;
+    display:flex;
+    gap: 30px;
+    list-style-type: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8em;
+    padding-left:0px;
 }
 
 footer {
@@ -21,20 +56,23 @@ footer {
     width: 80%;
 }
 
-img{
-    width: 30%
+img#cat{
+    width: 25%;
+    filter: grayscale(1);
 }
 
 h1{
-    font-family: "DM Sans", sans-serif;
-    font-size: 6em;
-    font-weight: 1000;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
     font-style: normal;
+    font-size: 10em;
     color: #b3ff00;
     text-align: right;
     padding-top: 0px;
+    padding-right:10px;
     line-height: 0%;
     letter-spacing: 3px;
+    text-transform: capitalize;
 }
 
 h2{
@@ -55,15 +93,13 @@ p{
     text-align: left;
 }
 
-body {
-    background-color: black;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  ul, li {
-    display:inline
+hr#footer {
+    width:25%;
+    margin-left:0;
+    padding:0;
+    border-color: #b3ff00;
 }
+
 
 
 #bioText{
@@ -72,9 +108,9 @@ body {
     font-style: normal;
     font-size: .8em;
     color: #b3ff00;
-    text-align:right;
-    width: 40%;
-    /*float: right;*/
+    text-align:justify;
+    width: 25%;
+    padding-bottom: 100px;
 }
 
 
