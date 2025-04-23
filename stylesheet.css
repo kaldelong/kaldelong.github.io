@@ -1,7 +1,7 @@
 body {
     background-image: url("img/Texturelabs_Paper_243XL.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
+    background-size:cover;
+    background-repeat:inherit;
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: darken;
     margin-left: 20px;
