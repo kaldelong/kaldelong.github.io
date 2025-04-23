@@ -1,12 +1,17 @@
 body {
-    background-color: black;
+    background-image: url("img/Texturelabs_Paper_243XL.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0;
-  }
+}
 
-  ul#mainNav, li#mainNav {
+ul#mainNav, li#mainNav {
     display:flex;
+    list-style-type: none;
     gap: 30px;
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
@@ -14,6 +19,7 @@ body {
     font-size: .8em;
     padding:0;
     margin-bottom: 50px;
+    float: right;
     
     a:link { 
         color: #b3ff00; 
@@ -35,7 +41,7 @@ body {
     }
 }
 
-ul#footer, li#mainNav {
+ul#footer, li#footer {
     text-align: right;
     display:flex;
     gap: 30px;
@@ -56,9 +62,10 @@ footer {
     width: 80%;
 }
 
-img#cat{
+img#photo{
     width: 25%;
-    filter: grayscale(1);
+    height: auto;
+    padding-top:20px;
 }
 
 h1{
@@ -100,8 +107,6 @@ hr#footer {
     border-color: #b3ff00;
 }
 
-
-
 #bioText{
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
@@ -109,8 +114,6 @@ hr#footer {
     font-size: .8em;
     color: #b3ff00;
     text-align:justify;
-    width: 25%;
     padding-bottom: 100px;
+    width: 25%;
 }
-
-
