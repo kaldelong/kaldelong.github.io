@@ -1,12 +1,52 @@
-body {
+/*  UNIVERSAL  */
+* {
+    margin:0; padding:0;
     background-image: url("img/Texturelabs_Paper_243XL.jpg");
     background-size:cover;
     background-repeat:inherit;
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: darken;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0;
+}
+
+#wrapper {height: 50em; width: 95%; margin:auto;}
+
+
+/*  COLOR  */
+.green {color: #b3ff00;}
+.black {color: #000000}
+.white {color: #ffffff}
+
+
+/*  COLUMN  */
+.col-1 {width: 25%;}
+.col-2 {width: 50%}
+
+
+/*  POSITION  */
+.relative{
+    position:relative;
+}
+
+.sticky{
+    position:sticky;
+    bottom: 0;
+    left: 0;
+    float:none;
+}
+
+.fixed{
+    position:fixed;
+    bottom: 2em;
+}
+
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clear-left{
+    clear:left;
 }
 
 ul#mainNav, li#mainNav {
@@ -50,7 +90,6 @@ ul#footer, li#footer {
     font-weight: 200;
     font-style: normal;
     font-size: .8em;
-    padding-left:0px;
 }
 
 footer {
@@ -58,12 +97,10 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: .8em;
-    color: #b3ff00;
-    width: 80%;
 }
 
 img#photo{
-    width: 25%;
+    width: 100%;
     height: auto;
     padding-top:20px;
 }
@@ -96,24 +133,9 @@ p{
     font-weight: 200;
     font-style: normal;
     font-size: .8em;
-    color: #b3ff00;
-    text-align: left;
+    text-align: justify;
 }
 
-hr#footer {
-    width:25%;
-    margin-left:0;
-    padding:0;
+hr {
     border-color: #b3ff00;
-}
-
-#bioText{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: .8em;
-    color: #b3ff00;
-    text-align:justify;
-    padding-bottom: 100px;
-    width: 25%;
 }
