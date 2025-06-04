@@ -1,9 +1,81 @@
 .row {
     display: flex;
+    box-shadow:0px 0px 0px 0.5px #b3ff00
 }
 
+#wrapper {width: 95%; margin:auto; padding-top:2em;}
 
-/*  UNIVERSAL  */
+body{
+    background-image: url("img/Texturelabs_Paper_243XL.jpg");
+        background-size:cover;
+        background-repeat:inherit;
+        background-color: rgba(0,0,0,0.4);
+        background-blend-mode: darken;
+    z-index: -2;
+    font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: #b3ff00;
+}
+
+p,ul,footer,nav,li{
+    margin:0;
+}
+
+h1{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 10em;
+    font-style: normal;
+    color: #b3ff00;
+    line-height: 80%;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+#name{
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+li{
+    display:inline;
+    float:right;
+    padding-right:1em;
+}
+
+footer{
+    padding:0;
+    margin:0;
+}
+
+#footer-li{
+    display:inline;
+    float:left;
+    padding-right:1em;
+}
+
+a:link { 
+    color: #b3ff00; 
+    text-decoration: none;
+    } 
+a:visited { 
+    color: #b3ff00; 
+    text-decoration: none;
+    }
+a:hover { 
+    color: white; 
+    text-decoration: none;
+    }
+
+
+
+
+/*  OLD CSS
 * {
     margin:0; padding:0;
     box-sizing:border-box;
@@ -11,29 +83,28 @@
 
 body{
     background-image: url("img/Texturelabs_Paper_243XL.jpg");
-    background-size:cover;
-    background-repeat:inherit;
-    background-color: rgba(0,0,0,0.4);
-    background-blend-mode: darken;
+        background-size:cover;
+        background-repeat:inherit;
+        background-color: rgba(0,0,0,0.4);
+        background-blend-mode: darken;
     z-index: -2;
-    padding-top: 40px;
-    padding-bottom:20px;
+    font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: .8em;
+        color: #b3ff00;
+        text-align:left;
 }
 
 #wrapper {width: 95%; margin:auto;}
 
-
-/*  COLOR  */
 .green {color: #b3ff00;}
 .black {color: #000000}
 .white {color: #ffffff}
 
-
-/*  COLUMN  */
-
 .columns {
     float:left;
-    /*box-shadow:0px 0px 0px 0.5px #b3ff00; */
+    box-shadow:0px 0px 0px 0.5px #b3ff00;
     padding:1em;
     
 }
@@ -50,8 +121,6 @@ body{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
-/*  POSITION  */
 .relative{
     position:relative;
 }
@@ -83,8 +152,6 @@ body{
     justify-items: center;
 }
 
-
-/*  STYLE   */
 
 nav{
     font-family: "DM Sans", sans-serif;
@@ -137,26 +204,6 @@ h1{
     letter-spacing: 3px;
     text-transform: capitalize;
     text-align: right;
-    padding-bottom: 0.125em;
-}
-
-h2{
-    font-family: "DM Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ffffff;
-    line-height: 50%;
-    color: #b3ff00;
-}
-
-p{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: .8em;
-    text-align: justify;
-    color: #b3ff00;
 }
 
 hr {
@@ -166,29 +213,28 @@ hr {
 a:link { 
     color: #b3ff00; 
     text-decoration: none;
-   /*text-decoration: underline wavy;
+    text-decoration: underline wavy;
     text-underline-offset: 3px;
-    text-decoration-thickness: 0.06em;*/
+    text-decoration-thickness: 0.06em;
     } 
 a:visited { 
     color: #b3ff00; 
     text-decoration: none;
-    /*text-decoration: underline wavy;
+    text-decoration: underline wavy;
     text-underline-offset: 3px;
-    text-decoration-thickness: 0.06em;*/
+    text-decoration-thickness: 0.06em;
     }
 a:hover { 
     color: white; 
     text-decoration: none;
-    /*text-decoration: underline wavy;
+    text-decoration: underline wavy;
     text-underline-offset: 3px;
-    text-decoration-thickness: 0.06em;*/
+    text-decoration-thickness: 0.06em;
     }
 
 
-/* MOBILE */
 
-@media only screen and (max-width: 480px /* smaller than mobile*/) { 
+@media only screen and (max-width: 480px) { 
     .row{
         display:block;
     }

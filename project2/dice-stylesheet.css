@@ -1,0 +1,130 @@
+.container {
+    position: relative;
+    overflow-y: auto; /* Enables final scroll */
+    display:flex;
+  }
+#titleitems{
+    z-index: 5;
+}
+   
+.left-column, .middle-column {
+    position: absolute;
+    width: 30.6666666667%; /* Adjust based on needs */
+    top: 0;
+    bottom: 0;
+    /*background: white;*/
+    z-index: 1; /* Ensures columns overlay scrolling content */
+  }
+   
+  .left-column { left: 0; }
+  .middle-column { 
+    width: 30.6666666667%;
+    margin-left: 34.6666666667%; }
+   
+  .right-column {
+    width: 30.66666666675;
+    margin-left: 69.3333333333%; /* Sum of left + middle widths */
+    overflow-y:auto; /* Independent right-column scroll */
+    height: 80vh;
+  }
+
+
+#rowtransparent{
+    opacity:0;
+}
+
+
+
+.row {
+    display: flex;
+    /*box-shadow:0px 0px 0px 0.5px #b3ff00*/
+    padding:0;
+}
+
+#wrapper {width: 90%; margin:auto; padding-top:2em;}
+
+.textPadding {padding-left:1.5em; padding-right:1.5em;}
+
+body{
+    /*background-color: black;*/
+    z-index: -2;
+    font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: black;
+}
+
+p,ul,footer,nav,li{
+    margin:0;
+}
+
+h1{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: normal;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-bottom:0;
+}
+
+#name{
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+li{
+    display:inline;
+    float:right;
+    padding-right:1em;
+}
+
+footer{
+    padding:0;
+    margin:0;
+}
+
+#footer-li{
+    display:inline;
+    float:left;
+    padding-right:1em;
+}
+
+a:link { 
+    color: #b3ff00; 
+    text-decoration: none;
+    } 
+a:visited { 
+    color: #b3ff00; 
+    text-decoration: none;
+    }
+a:hover { 
+    color: white; 
+    text-decoration: none;
+    }
+
+
+.sticky{
+    position:sticky;
+    top: 2em;
+    float:none;
+}
+
+.absolute{
+    position:absolute;
+    top:0;
+}
+
+.relative{
+    position:relative;
+    bottom:0;
+}
+
+.fixed{
+    position:fixed;
+}
