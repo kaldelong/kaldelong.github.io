@@ -1,21 +1,52 @@
-.row {
-    display: flex;
-    box-shadow:0px 0px 0px 0.5px #b3ff00
-}
-
 #wrapper {width: 95%; margin:auto; padding-top:2em;}
 
 body{
-    background-image: url("img/Texturelabs_Paper_243XL.jpg");
+    /*background-image: url("img/Texturelabs_Paper_243XL.jpg");
         background-size:cover;
         background-repeat:inherit;
         background-color: rgba(0,0,0,0.4);
-        background-blend-mode: darken;
-    z-index: -2;
+        background-blend-mode: darken;*/
     font-family: "DM Sans", sans-serif;
         font-weight: 200;
         font-style: normal;
         color: #b3ff00;
+    animation-name: background-color;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color{
+    0% {background-color: #b3ff00;}
+    100% {background-color: black;}
+}
+
+.imgtransition {
+    width:100%;
+    transition: all 3s;
+    transition-timing-function: ease-in-out;
+  
+    &:hover {
+      transform: rotate(1080deg);
+    }
+  }
+
+img{
+    animation-name: photo;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes photo {
+    0% {opacity: 0%;}
+    100% {opacity: 100%}
+}
+
+.row {
+    z-index: -5;
+    display: flex;
+    box-shadow:0px 0px 0px 0.5px #b3ff00
 }
 
 p,ul,footer,nav,li{
@@ -71,6 +102,11 @@ a:hover {
     color: white; 
     text-decoration: none;
     }
+
+
+
+
+
 
 
 
